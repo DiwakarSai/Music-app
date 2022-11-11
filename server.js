@@ -1,6 +1,7 @@
 var express = require('express');
 var env = require('dotenv').config()
 var ejs = require('ejs');
+
 var path = require('path');
 var app = express();
 var bodyParser = require('body-parser');
@@ -8,7 +9,9 @@ var mongoose = require('mongoose');
 var session = require('express-session');
 var MongoStore = require('connect-mongo')(session);
 
-mongoose.connect('mongodb+srv://<DB_USER_NAME>:<DB_PASSWORD>@cluster0-vatbg.mongodb.net/registrationFormHeruko?retryWrites=true&w=majority', {
+
+
+mongoose.connect('mongodb+srv://musicapp:music123@musicapp.tcfqrnd.mongodb.net/?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }, (err) => {
@@ -59,7 +62,7 @@ app.use(function (err, req, res, next) {
 });
 
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 app.listen(PORT, function () {
   console.log('Server is started on http://127.0.0.1:'+PORT);
 });

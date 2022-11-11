@@ -1,0 +1,51 @@
+<!-- <script>
+    axios.get('./songs.json').then(
+      res => {
+        //!search ? setData(res.data) : setData(res.data.filter(songs => songs.title===search))
+         songs = res.data;
+        console.log(songs);
+        console.log(resdata);
+      }
+</script> -->
+<script>
+
+   // console.log(<%= songs%>)
+    var songs = <%-songs%>;
+   /* songs = JSON.stringify(songs);
+    console.log(JSON.parse(songs));
+
+    songs = JSON.parse(songs);
+*/
+    
+<%= JSON.stringify(songs) %>
+//<%= JSON.parse(songs) %>
+</script>
+
+
+                    <div>
+                    <div className = "row" >
+                        <p><%= songs[0].id %>
+                        </p>
+                            
+                                
+                                    <div className = "col-md-3" key={song.id}>
+                                    <div className="card" style={{"width": "17.5rem"}} >
+                                    <img src = className="card-img-top" alt={song.title} />
+                                    <div className="card-body">
+                                        <h5 className="card-title">{song.title} - {song.movie}</h5>
+                                        
+                                        <img="card-img-top" alt={song.title} />
+                                            <div className="card-body">
+                                                <h5 className="card-title">{song.title} - {song.movie 
+                                        
+                                        
+                                            <audio controls src={song.song} />
+                                    </div>
+                                    </div>
+                                    </div>
+                                    
+                        
+                                
+                        </div>
+                </div>
+            

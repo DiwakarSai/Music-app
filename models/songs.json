@@ -1,0 +1,50 @@
+[
+    {
+        "id":1,
+        "img":"https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTR8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80ic/photo.png",
+        "movie":"vakkeel ssab",
+        "singer":"sid sriaran",
+        "song":"songs/song1.mp3",
+        "title":"ghjfghj"
+    }
+    , {
+        "id":2,
+        "img":"pic/brownmunde.jpg",
+        "movie":"AP Dhillon",
+        "singer":"AP Dhillon",
+        "song":"songs/Brown-Munde.mp3",
+        "title":"Brown Munde"
+    }
+    , {
+        "id":3,
+        "img":"pic/brownmunde.jpg",
+        "movie":"AP Dhillon",
+        "singer":"AP Dhillon",
+        "song":"songs/Brown-Munde.mp3",
+        "title":"Brown Munde"
+    }
+    , {
+        "id":4,
+        "img":"pic/brownmunde.jpg",
+        "movie":"AP Dhillon",
+        "singer":"AP Dhillon",
+        "song":"songs/Brown-Munde.mp3",
+        "title":"Brown Munde"
+    }
+    , {
+        "id":5,
+        "img":"pic/brownmunde.jpg",
+        "movie":"AP Dhillon",
+        "singer":"AP Dhillon",
+        "song":"songs/Brown-Munde.mp3",
+        "title":"Brown Munde"
+    }
+    , {
+        "id":6,
+        "img":"pic/brownmunde.jpg",
+        "movie":"AP Dhillon",
+        "singer":"AP Dhillon",
+        "song":"songs/Brown-Munde.mp3",
+        "title":"Brown Munde"
+    }
+]

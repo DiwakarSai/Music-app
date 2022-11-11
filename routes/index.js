@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
+var axios = require('axios')
 var User = require('../models/user');
+var songs = require('../models/songs.json');
 
 router.get('/', function (req, res, next) {
 	return res.render('index.ejs');
@@ -61,6 +63,8 @@ router.get('/login', function (req, res, next) {
 	return res.render('login.ejs');
 });
 
+
+
 router.post('/login', function (req, res, next) {
 	//console.log(req.body);
 	User.findOne({email:req.body.email},function(err,data){
@@ -111,6 +115,15 @@ router.get('/logout', function (req, res, next) {
 
 router.get('/forgetpass', function (req, res, next) {
 	res.render("forget.ejs");
+});
+router.get('/home', function (req, res, next) { 
+
+		  //!search ? setData(res.data) : setData(res.data.filter(songs => songs.title===search))
+		   
+		//   console.log(songs[0]);
+		//   console.log(resdata);
+	
+	res.render("home.ejs", {songs:JSON.stringify(songs[0])});
 });
 
 router.post('/forgetpass', function (req, res, next) {
