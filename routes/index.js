@@ -1,6 +1,5 @@
 var express = require('express');
 var router = express.Router();
-var axios = require('axios')
 var User = require('../models/user');
 var songs = require('../models/songs.json');
 
@@ -60,7 +59,9 @@ router.post('/', function(req, res, next) {
 });
 
 router.get('/login', function (req, res, next) {
+	
 	return res.render('login.ejs');
+
 });
 
 
@@ -74,7 +75,7 @@ router.post('/login', function (req, res, next) {
 				//console.log("Done Login");
 				req.session.userId = data.unique_id;
 				//console.log(req.session.userId);
-				res.send({"Success":"Success!"});
+				res.send({"Success":"Success"});
 				
 			}else{
 				res.send({"Success":"Wrong password!"});
@@ -123,7 +124,7 @@ router.get('/home', function (req, res, next) {
 		//   console.log(songs[0]);
 		//   console.log(resdata);
 	
-	res.render("home.ejs", {songs:JSON.stringify(songs[0])});
+	res.render("home.ejs", {songs:songs});
 });
 
 router.post('/forgetpass', function (req, res, next) {

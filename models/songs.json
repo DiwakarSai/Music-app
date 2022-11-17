@@ -1,50 +1,43 @@
-[
-    {
-        "id":1,
-        "img":"https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTR8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80ic/photo.png",
-        "movie":"vakkeel ssab",
-        "singer":"sid sriaran",
-        "song":"songs/song1.mp3",
-        "title":"ghjfghj"
-    }
-    , {
-        "id":2,
-        "img":"pic/brownmunde.jpg",
-        "movie":"AP Dhillon",
-        "singer":"AP Dhillon",
-        "song":"songs/Brown-Munde.mp3",
-        "title":"Brown Munde"
-    }
-    , {
-        "id":3,
-        "img":"pic/brownmunde.jpg",
-        "movie":"AP Dhillon",
-        "singer":"AP Dhillon",
-        "song":"songs/Brown-Munde.mp3",
-        "title":"Brown Munde"
-    }
-    , {
-        "id":4,
-        "img":"pic/brownmunde.jpg",
-        "movie":"AP Dhillon",
-        "singer":"AP Dhillon",
-        "song":"songs/Brown-Munde.mp3",
-        "title":"Brown Munde"
-    }
-    , {
-        "id":5,
-        "img":"pic/brownmunde.jpg",
-        "movie":"AP Dhillon",
-        "singer":"AP Dhillon",
-        "song":"songs/Brown-Munde.mp3",
-        "title":"Brown Munde"
-    }
-    , {
-        "id":6,
-        "img":"pic/brownmunde.jpg",
-        "movie":"AP Dhillon",
-        "singer":"AP Dhillon",
-        "song":"songs/Brown-Munde.mp3",
-        "title":"Brown Munde"
-    }
-]
+[{
+    "id": 1,
+    "img": "https://docs.google.com/uc?export=download&id=15aONw-JCsDnr3raOzt0ITYJuyK3ugqN5",
+    "movie": "Remaster",
+    "singer": "led zeppelin",
+    "song": "https://docs.google.com/uc?export=download&id=1oj1i_nxKh_Xj3Yuw2kVQy_B-7rKPmEpZ",
+    "title": "stairway to heaven"
+}, {
+    "id": 2,
+    "img": "https://docs.google.com/uc?export=download&id=1_ezjKq4sP2ogmFeZeQPrWi8FQLhBF3LA",
+    "movie": "Shershaah",
+    "singer": "Jubin Nautiyal, Asees Kaur",
+    "song": "https://docs.google.com/uc?export=download&id=1qW5YUBO7MmdG17LhX-hnF9wRuQPragEo",
+    "title": "Raatan Lambiyan"
+}, {
+    "id": 3,
+    "img": "https://docs.google.com/uc?export=download&id=17DS68gak9iy4_sbDs9JLhb6CZomR9ofK",
+    "movie": "Divide",
+    "singer": "Ed Sheeran",
+    "song": "https://docs.google.com/uc?export=download&id=1dS2VeWuCwuH3iJKVF7ZnFgpTN3wPiohY",
+    "title": "Perfect"
+}, {
+    "id": 4,
+    "img": "https://docs.google.com/uc?export=download&id=1415VFq9pn3jL81TN5674CjGU8r7JO0ah",
+    "movie": "Brown Munde",
+    "singer": "AP Dhillon",
+    "song": "https://docs.google.com/uc?export=download&id=1aBySIQCnb7_o3EyQ5_NlmfFb_ipMjwtC",
+    "title": "Brown Munde"
+}, {
+    "id": 5,
+    "img": "https://docs.google.com/uc?export=download&id=1VnfxYBQxxO5HbAZQMGYRYBUX6kzR9OhZ ",
+    "movie": "Asin9ne",
+    "singer": "Dwayne Johnson",
+    "song": "https://docs.google.com/uc?export=download&id=1Q9JTNMvneUF-DOzM7Y3MVu5HgMnYOjNF",
+    "title": "Face Off "
+}, {
+    "id": 6,
+    "img": "https://docs.google.com/uc?export=download&id=1chl9_Rv2Eyc0RXqcJIjWJD6kuzNeFS8l",
+    "movie": "Remaster",
+    "singer": "Led Zeppelin",
+    "song": "https://docs.google.com/uc?export=download&id=1oj1i_nxKh_Xj3Yuw2kVQy_B-7rKPmEpZ",
+    "title": "Kashmir"
+}]

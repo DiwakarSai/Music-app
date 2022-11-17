@@ -1,51 +1,81 @@
-<!-- <script>
-    axios.get('./songs.json').then(
-      res => {
-        //!search ? setData(res.data) : setData(res.data.filter(songs => songs.title===search))
-         songs = res.data;
-        console.log(songs);
-        console.log(resdata);
+<!DOCTYPE html>
+<html lang="en">
+  <title>Musica</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- <style>
+      body{
+        background-image: url("bk.jpg");
       }
-</script> -->
-<script>
+    </style> -->
+</head>
 
-   // console.log(<%= songs%>)
-    var songs = <%-songs%>;
-   /* songs = JSON.stringify(songs);
-    console.log(JSON.parse(songs));
+<body class="home-img">
 
-    songs = JSON.parse(songs);
-*/
-    
-<%= JSON.stringify(songs) %>
-//<%= JSON.parse(songs) %>
-</script>
+    <nav  class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">música 𝄞</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse float-end"style="justify-content: flex-end;" id="navbarNav">
+		  <ul class="navbar-nav">
+			<!-- <li class="nav-item active">
+			  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="/">Register</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="/forgetpass">Forget password</a>
+			</li> -->
+			<li class="nav-item active float-end"  >
+			  <a class="nav-link" href="/logout">Logout</a>
+			</li> 
+			
+		  </ul>
+		</div>
+	  </nav>
 
 
-                    <div>
-                    <div className = "row" >
-                        <p><%= songs[0].id %>
-                        </p>
-                            
-                                
-                                    <div className = "col-md-3" key={song.id}>
-                                    <div className="card" style={{"width": "17.5rem"}} >
-                                    <img src = className="card-img-top" alt={song.title} />
-                                    <div className="card-body">
-                                        <h5 className="card-title">{song.title} - {song.movie}</h5>
-                                        
-                                        <img="card-img-top" alt={song.title} />
-                                            <div className="card-body">
-                                                <h5 className="card-title">{song.title} - {song.movie 
-                                        
-                                        
-                                            <audio controls src={song.song} />
-                                    </div>
-                                    </div>
-                                    </div>
-                                    
-                        
-                                
+    <div>
+         
+        <div class="row">
+                    <% songs.forEach(function(data,index){  %>
+                            <div class="col-md-3" >
+                                <div class="card">
+            
+
+
+                        <img src=" <%- data.img %>" class="card-img-top" alt="<%- data.title %>" />
+                        <div class="card-body">
+                            <p>
+                                <%- data.title %>
+                            </p>
+                            <h5 class="card-title">
+                                <%-data.singer%> -
+                                    <%-data.movie%>
+
+                            </h5>
+
+
+                            <audio controls src="<%-data.song %>" />
+                        </div>
                         </div>
                 </div>
-            
+
+                <% }) %>
+            </div>
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>
